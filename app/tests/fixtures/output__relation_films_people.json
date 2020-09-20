@@ -1,0 +1,26 @@
+{
+    "2baf70d1-42bb-4437-b551-e5fed5a87abe": [
+        {
+            "name": "Bob",
+            "films": [
+                "https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87abe",
+                "https://ghibliapi.herokuapp.com/films/77777777-42bb-4437-b551-e5fed5a87abe"
+            ]
+        }
+    ],
+    "77777777-42bb-4437-b551-e5fed5a87abe": [
+        {
+            "name": "Bob",
+            "films": [
+                "https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87abe",
+                "https://ghibliapi.herokuapp.com/films/77777777-42bb-4437-b551-e5fed5a87abe"
+            ]
+        }
+    ],
+    "99999999-42bb-4437-b551-e5fed5a87abe": [
+        {
+            "name": "Nick",
+            "films": ["https://ghibliapi.herokuapp.com/films/99999999-42bb-4437-b551-e5fed5a87abe"]
+        }
+    ]
+}

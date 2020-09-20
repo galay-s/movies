@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+
+  nginx:
+    restart: always
+    image: nginx:latest
+    volumes:
+      - ./nginx_/:/etc/nginx/conf.d/
+      - ./logfiles/:/srv/app/logfiles/
+    ports:
+        - "8082:8082"
+    depends_on:
+      - backend
+
+  memcached:
+    restart: always
+    image: memcached:latest
+
+  backend:
+    restart: always
+    build:
+      dockerfile: ./Dockerfile
+      context: .
+    command: /usr/local/bin/uwsgi --ini "/srv/app/uwsgi.ini"
+    volumes:
+      - ./:/srv/app
+    depends_on:
+      - memcached

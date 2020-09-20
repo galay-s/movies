@@ -1,0 +1,18 @@
+<center><h1>ALL MOVIES<h1></center>
+{% for film in films %}
+  {% for film_item_key, film_item_val in film.items() %}
+    {% if film_item_key == 'people' %}
+      <h2>{{ film_item_key }}:</h2>
+      <br>
+      {% for people in film_item_val %}
+         - {{ people.name }}
+        <br>
+      {% endfor %}
+    {% else %}
+      <h4>{{ film_item_key }}:</h4> {{ film_item_val }}
+    {% endif %}
+    <br>
+    <br>
+  {% endfor %}
+<hr>
+{% endfor %}
