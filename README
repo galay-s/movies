@@ -40,6 +40,6 @@ TECHNOLOGY:
 
 
 THOUGHTS:
- - There was chosen flask because of django is huge for this purpose.
+ - There flask was chosen because of django is huge for this purpose.
  - We could launch request to '/files' and '/people' in parallel,
    but didn't because of responses were pretty quick.
